@@ -1,0 +1,22 @@
+@media print {
+    /* Hide all non-printable elements */
+    body * {
+        visibility: hidden;
+    }
+
+    /* Show only the printable element */
+    #printable, #printable * {
+        visibility: visible;
+    }
+
+    /* Set the font size and line height for printing */
+    body, #printable {
+        font-size: 14pt;
+        line-height: 1.5;
+    }
+
+    /* Set the margins for printing */
+    @page {
+        margin: 2cm;
+    }
+}
